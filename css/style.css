@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+body {
+    background-size: auto auto;
+    background-color: #A9BCF5;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 4px, #fff 4px, #fff 5px);
+    font-size: 16px;
+    font-family: 'YuGothic','Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans';
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 100%;
+}
+
+.container {
+    background: #fff;
+    border-radius: 25px;
+    height: auto;
+    padding: 10px 15px 15px 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.mainPf {
+    width: 65%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 20%;
+}
+
+.mainPf .headerImg {
+    border-radius: 20px;
+}
+
+@media (min-width: 768px){
+    .mainPf .headerImg {
+        width: 100%;
+        height: 33.3%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mainPf .icon {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: solid #fff 5px;
+        position: absolute;
+        top: 40%;
+        left: -15%;
+        z-index: 5;
+    }
+
+    .mainPf h1 {
+        font-size: 44px;
+    }
+
+    .mainPf p {
+        font-size: 24px;
+        position: static;
+    }
+}
+
+@media (max-width: 575px) {
+    .mainPf .headerImg {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mainPf .icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid #fff 5px;
+        position: absolute;
+        top: 15%;
+        left: -35%;
+        z-index: 5;
+    }
+
+    .mainPf h1 {
+        font-size: 20px;
+    }
+
+    .mainPf p {
+        font-size: 24px;
+        position: static;
+    }
+}
+
+.wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+}
+  
+.wrap-3col .inner {
+    -webkit-box-flex: 1;
+            flex: 1;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrap {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+    }
+    .wrap .inner {
+      width: 50%;
+      -webkit-box-flex: 0;
+              flex: none;
+    }
+}
+
+dl {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+dl dt,
+dl dd {
+    display: block;
+}
+
+dl dt {
+    width: calc(100% - 2%);
+    color: #0404B4;
+}
+
+dl dd {
+    width: calc(100% - 100px);
+}
+
+ul {
+    list-style: none;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+}
+
+@media (max-width: 575px) {
+    ul {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    li {
+        display: inline-block;
+    }
+  }
+
+ul li {
+    color:#0404B4;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #0404B4;
+    font-family: 'YuGothic','Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans';
+}
+
+h2 {
+    color: #0404B4;
+    font-family: 'YuGothic','Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans';
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 3px;
+    position: relative;
+    top: 2px;
+    background: linear-gradient(to right, #0404B4, #A9E2F3);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
